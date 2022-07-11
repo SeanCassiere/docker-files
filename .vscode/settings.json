@@ -1,4 +1,4 @@
 {
 	"cSpell.words": ["Mongo", "pgAdmin", "Portainer", "Postgres", "webnet"],
-	"conventionalCommits.scopes": ["repo", "portainer", "pg-admin", "postgres", "mongo", "watchtower"]
+	"conventionalCommits.scopes": ["repo", "portainer", "pg-admin", "postgres", "mongo", "mongo-express", "watchtower"]
 }
