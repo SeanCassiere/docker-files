@@ -1,0 +1,23 @@
+version: "3.0"
+services:
+  mongo-5:
+    image: mongo:5.0
+    container_name: mongo-5
+    restart: unless-stopped
+    volumes:
+      - ./data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+      - MONGO_INITDB_DATABASE=init_db
+      - MONGO_INITDB_USER=monngo_init
+      - MONGO_INITDB_PASSWORD=mongo_init
+    ports:
+      - 27017:27017
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    name: webnet
+    external: true
